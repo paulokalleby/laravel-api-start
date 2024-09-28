@@ -31,11 +31,5 @@ Run migration and popular user table with seeder
 ./vendor/bin/sail artisan migrate --seed
 ```
 
-Generate documentation with swagger
-
-```sh
-./vendor/bin/sail l5-swagger:generate
-```
-
 Access project documentation
 [http://localhost](http://localhost)
