@@ -17,6 +17,7 @@ class UserFactory extends Factory
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
             'password' => 'password',
+            'role' => \App\Enums\RoleEnum::DEFAULT,
             'remember_token' => Str::random(10),
         ];
     }

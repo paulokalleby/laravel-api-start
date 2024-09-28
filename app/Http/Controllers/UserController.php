@@ -67,7 +67,7 @@ class UserController extends Controller
      *              @OA\Property(property="name", type="string"),
      *              @OA\Property(property="email", type="string"),
      *              @OA\Property(property="password", type="string"),
-     *              @OA\Property(property="roles", type="string"),
+     *              @OA\Property(property="role", type="string"),
      *              @OA\Property(property="active", type="bool"),
      *        )
      *     ),
@@ -131,7 +131,7 @@ class UserController extends Controller
      *              type="object",
      *              @OA\Property(property="name", type="string"),
      *              @OA\Property(property="email", type="string"),
-     *              @OA\Property(property="roles", type="string"),
+     *              @OA\Property(property="role", type="string"),
      *              @OA\Property(property="active", type="bool"),
      *        )
      *     ),

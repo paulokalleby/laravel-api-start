@@ -18,6 +18,7 @@ class UserRequest extends FormRequest
             'name'     => ['required','string', 'min:3', 'max:100'],
             'password' => ['required','string' ,'min:8', 'max:16'],
             'email'    => ['required','string','email', 'max:255', Rule::unique('users')->ignore($this->user)],
+            'role'     => ['required', Rule::in( array_values(\App\Enums\RoleEnum::cases()) )],
             'active'   => ['nullable','boolean'],
         ];
 

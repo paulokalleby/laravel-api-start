@@ -15,6 +15,7 @@ class UserResource extends JsonResource
             'name'    => $this->name,
             'email'   => $this->email,
             'active'  => $this->active,
+            'role'    => $this->role->label(),
             'created' => Carbon::make($this->created_at)->format('d/m/Y - H:i'),
             'updated' => $this->updated_at->diffForHumans(),
         ];
